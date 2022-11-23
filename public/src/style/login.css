@@ -1,3 +1,8 @@
+:root{
+    --primary: #d8d8d8;
+    --secondary: #979797;
+}
+
 main{
     display: flex;
     justify-content: center;
@@ -6,28 +11,22 @@ main{
     height: 100Vh;
 }
 
-body{
-    overflow: hidden;
-}
+
 
 .container{
-    border: solid 5px #979797;
+    border: solid 5px var(--secondary);
     padding: 2em;
-    max-width: 25%;
+    max-width: 20%;
 }
 
 p{
-    font-size: 1.2em;
+    font-size: 1.3em;
+    font-weight: 400;
 }
 
-input{
-    border: solid 1px #979797;
-    padding: 5px;
-    font-weight: 300;
-    font-size: 1em;
-}
 
-@media screen and (max-width: 700px) {
+
+@media screen and (max-width: 800px) {
  
     .container{
         max-width: 30%;

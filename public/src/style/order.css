@@ -1,0 +1,13 @@
+@media screen and (max-width: 600px) {
+   .search{
+    width: 60%;
+    }
+}
+
+.text-danger{
+    color: #e91a3a;
+}
+
+.text-success{
+    color: #6dd400;
+}

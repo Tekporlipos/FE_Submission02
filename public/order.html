@@ -3,8 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <title>Freddys - Orders</title>
-</head>
-<body>
+    <link rel="shortcut icon" href="./src/image/Freddys_Logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./src/style/main.css">
+    <link rel="stylesheet" href="./src/style/dashboard.css">
+    <link rel="stylesheet" href="./src/style/order.css">
 
+</head>
+<body class="bg-primary">
+    <main class="row">
+        <div class="col-2 flex-column p-1 pt-2">
+            <img src="./src/image/Freddys_Logo.svg" width="90" alt="Freddys_Logo">
+            <a class="mt-2" href="./index.html">Dashboard</a>
+            <a class="mt-1" href="#">Orders</a>
+            <form class="mt-1"  action="" method="post">
+               <button class="bg-primary remove-border">Logout</button>
+            </form>
+            
+        </div>
+        <div class="col-10 p-2">
+
+            <!-- Orders -->
+            <div class="head flex-row justify-content-space-between">
+                <h4 class="title">Orders</h4>
+                <div class="flex-row justify-content-end">
+                    <i>icon</i> <input type="search"  name="search" class="search bg-primary">
+                </div>
+            </div>
+            
+            
+            <div class="table mt-2">
+
+                <div class="table-head flex-row justify-content-space-between">
+                    <div >
+                        Product Name
+                    </div>
+                    <div >
+                        date
+                    </div>
+                    <div >
+                        price
+                    </div>
+                    <div>
+                        status
+                    </div>
+                </div>
+                
+                <br>
+                <div class="table-body">
+                    <div class="flex-row justify-content-space-between">
+                        <div >
+                            Product Name
+                        </div>
+                        <div >
+                            price
+                        </div>
+                        <div >
+                            #units sold
+                        </div>
+                        <div>
+                            revenue
+                        </div>
+                    </div>
+                </div>
+               
+
+            </div>
+            <div class="flex-row pt-05">
+                <div class="pr-05 cursor-pointer" href="">p</div><div class="pr-05">Page 1 of 3</div> <div class=" cursor-pointer">n</div>
+            </div>
+        </div>
+    </main>
+
+<script src="./src/script/main.js"></script>
+<script src="./src/script/orders.js"></script>
 </body>
 </html>
