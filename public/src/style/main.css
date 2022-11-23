@@ -129,3 +129,23 @@ flex-direction: row;
 .m-2{
     margin: 2em;
 }
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd9c;
+  }
+
+  .table-head th{
+    font-weight: 300;
+    text-transform: capitalize;
+    font-size: 1em;
+}

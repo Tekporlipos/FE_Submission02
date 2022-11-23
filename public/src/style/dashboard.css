@@ -54,18 +54,59 @@
     border-radius: 5px;
     padding: 1em;
     padding-bottom: 0px;
-    height: 200px;
+    height: 400px;
 }
 
 .table{
     padding-bottom: 1em;
     height: auto;
 }
-.table-head div{
-    font-weight: 300;
-    font-size: 1em;
-    text-transform: capitalize;
+
+input[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
 }
+
+label {
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 60px;
+	height: 25px;
+	background: var(--primary);
+    border: solid 1px var(--secondary);
+	display: block;
+	border-radius: 60px;
+	position: relative;
+}
+
+label:after {
+	content: '';
+	position: absolute;
+	left: 2px;
+    top: 0.5px;
+	width: 20px;
+	height: 20px;
+	background: var(--primary);
+    border: solid 1px var(--secondary);
+	border-radius: 20px;
+	transition: 0.3s;
+}
+
+input:checked + label {
+	background: var(--primary);
+    border: solid 1px var(--secondary);
+}
+
+input:checked + label:after {
+	left: calc(100% - 2px);
+	transform: translateX(-100%);
+}
+
+label:active:after {
+	width: 20px;
+}
+
 
 @media screen and (max-width: 850px) {
  

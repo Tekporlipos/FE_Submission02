@@ -27,23 +27,23 @@
             <div class="cards">
                 <div class="card">
                     <div class="card-title text-capitalize">today</div>
-                    <div class="card-content">$1456 / 9 orders</div>
+                    <div class="card-content today"></div>
                 </div>
                 <div class="card">
                     <div class="card-title text-capitalize">last week</div>
-                    <div class="card-content">$1456 / 9 orders</div>
+                    <div class="card-content lastweek"></div>
                 </div>
                 <div class="card">
                     <div class="card-title text-capitalize">last month</div>
-                    <div class="card-content">$1456 / 9 orders</div>
+                    <div class="card-content lastmonth"></div>
                 </div>
             </div>
 
             <!-- Revenue -->
             <div class="flex-row mt-2 justify-content-space-between">
-                <h4 class=" title">Revenue (last 7 days)</h4>
-                <div>
-                    <input type="radio" name="" id="">
+                <h4 class=" title">Revenue (last <span class="days">7 days</span>)</h4>
+                <div >
+                    <input type="checkbox" onclick="swichChart(this)" id="switch" /><label for="switch">Toggle</label>
                 </div>
             </div>
             <div class="chart mt-2">
@@ -57,42 +57,23 @@ d
             </div>
             <div class="table mt-2">
 
-                <div class="table-head flex-row justify-content-space-between">
-                    <div >
-                        Product Name
-                    </div>
-                    <div >
-                        price
-                    </div>
-                    <div >
-                        #units sold
-                    </div>
-                    <div>
-                        revenue
-                    </div>
-                </div>
-                
-                <br>
+                <table>
+                    <thead class="table-head">
+                        <tr>
+                            <th>Product Name</th>
+                            <th>price</th>
+                            <th>#units sold</th>
+                            <th>revenue</th>
+                          </tr>
+                    </thead>
+                   
+                    <tbody class="table-body">
+                        
+                    </tbody>
+                </table>
 
-                <div class="table-body">
-                    <div class=" flex-row justify-content-space-between">
-                        <div >
-                            Product Name
-                        </div>
-                        <div >
-                            price
-                        </div>
-                        <div >
-                            #units sold
-                        </div>
-                        <div>
-                            revenue
-                        </div>
-                    </div>
-                </div>
 
-               
-
+        
             </div>
         </div>
     </main>
