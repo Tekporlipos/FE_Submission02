@@ -24,8 +24,16 @@ p{
     font-weight: 400;
 }
 
+.loader{
+    display: none;
+}
 
-
+.error{
+    color: #e91a3a;
+    display: none;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
 @media screen and (max-width: 800px) {
  
     .container{

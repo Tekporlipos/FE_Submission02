@@ -21,14 +21,20 @@
             </div>
         </div>
 
+        <div class="error">
+            Something went wrong
+        </div>
+
         <form class="form-control flex-column" method="post"> 
-            <input type="text" required class="mt-1 bg-primary"  value="" name="username">
-            <input type="password" required class="mt-1 bg-primary" value="" name="password">
+            <input type="text" minlength="3" required class="mt-1 bg-primary">
+            <input type="password" minlength="8" required class="mt-1 bg-primary">
+            <img src="./src/image/throbber.gif" class="loader" alt="">
             <input type="submit" class="mt-4 bg-primary cursor-pointer" value="Login">
         </form>
     </div>
 </main>
 <script src="./src/script/main.js"></script>
+<script src="./src/script/apis.js"></script>
 <script src="./src/script/login.js"></script>
 </body>
 </html>
