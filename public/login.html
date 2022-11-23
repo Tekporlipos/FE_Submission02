@@ -3,8 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <title>Freddys - Login</title>
+    <link rel="shortcut icon" href="./src/image/Freddys_Logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./src/style/main.css">
+    <link rel="stylesheet" href="./src/style/login.css">
 </head>
-<body>
+<body class="bg-primary">
+<main >
+    <div class="container">
+        <div class="head flex-row justify-content-space-evenly">
+            <div class="head-content">
+                <p class="text-capitalize pr-05">
+                    freddy's artisanal halloween dandy shop
+                </p>
+            </div>
+            <div class="head-image">
+                <img src="./src/image/Freddys_Logo.svg" width="100" alt="Freddys_Logo">
+            </div>
+        </div>
 
+        <form class="form-control flex-column">
+            <input type="text" class="mt-1 bg-primary"  value="" name="username">
+            <input type="password" class="mt-1 bg-primary" value="" name="password">
+            <input type="submit" class="mt-4 bg-primary cursor-pointer" value="Login">
+        </form>
+    </div>
+</main>
 </body>
+<script src="./src/script/main.js"></script>
+<script src="./src/script/login.js"></script>
 </html>
