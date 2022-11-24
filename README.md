@@ -52,10 +52,12 @@ Evaluation
 enough room to demonstrate how to structure
 components in a small program.
 3. Show us your work through your commit history
-4. Completeness: did you complete the features?5. Correctness: does the functionality act in sensible,
+4. Completeness: did you complete the features?
+5. Correctness: does the functionality act in sensible,
 thought-out ways?
 6. Maintainability: is it written in a clean, maintainable way?
 7. Testing: is the system adequately tested?
+
 Please organize, design, test and document your code as if it
 were going into production - then push your changes to the
 master branch. After you have pushed your code. Follow the
