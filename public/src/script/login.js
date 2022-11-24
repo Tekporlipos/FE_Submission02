@@ -1,5 +1,4 @@
 // middleware
-
 window.onload = (event)=>{
   const token  =   getCookie("token");
   if(token && token.length === 277){

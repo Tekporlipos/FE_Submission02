@@ -12,8 +12,10 @@ getOrdersBySearch();
 
 function searchOrders(){
     searchValue = search.value;
+    if(searchValue.length > 0){
+        searchPage = 1;
+    }
     getOrdersBySearch();
-
   }
 
 
@@ -22,18 +24,14 @@ const inputChange = debounce(() => searchOrders());
 
 
 function orderByPagePrev() {
-
     searchPage = searchPage < 1 ? 1 : searchPage > 50 ? 50 : searchPage-1;
-
     getOrdersBySearch();
 }
 
 
 
 function orderByPageNext() {
-
     searchPage = searchPage < 1 ? 1 : searchPage > 50 ? 50 : searchPage+1;
-
     getOrdersBySearch();
 }
 
@@ -42,9 +40,6 @@ function orderByPageNext() {
 
 function getOrdersBySearch() {
     orderPage.innerHTML= "";
-    if(searchValue.length > 0){
-        searchPage = 1;
-    }
     getOrdersData(searchPage,searchValue).then(data=>{
 
         if(data.orders){
@@ -76,6 +71,9 @@ function getOrdersBySearch() {
             }
 
         }else{
+
+            //check if user is authenticated on any error
+
             checkAuth();
         }
         
