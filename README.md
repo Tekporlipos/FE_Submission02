@@ -1,13 +1,3 @@
-## Section A: How to submit the assignment.
-1. Create a public repository called: FE_Submission02
-2. Add GitHub User Azubi01 as collaborator to this repository
-3. Write an email to submissions@azubiafrica.org with the
-subject FE_Submission02, Your Name. Please use the name
-that you used to submit your application for the position.
-For example, if you applied using the name John Doe then the
-subject of the email should be FE_Submission02, John Doe.
-4. In the body of the email send a link to the repository with your
-submission
 ## Section B: The Assignment
 Your assignment is to implement an analytics dashboard using
 JavaScript and no framework.
