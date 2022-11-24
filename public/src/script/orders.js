@@ -1,4 +1,5 @@
 const page = document.querySelector(".current-page");
+const totalPage = document.querySelector(".total-page");
 const orderPage = document.querySelector(".table-body");
 const search = document.querySelector(".search");
 var searchPage = 1;
@@ -15,7 +16,10 @@ function searchOrders(){
 
   }
 
+
 const inputChange = debounce(() => searchOrders());
+
+
 
 function orderByPagePrev() {
 
@@ -24,6 +28,8 @@ function orderByPagePrev() {
     getOrdersBySearch();
 }
 
+
+
 function orderByPageNext() {
 
     searchPage = searchPage < 1 ? 1 : searchPage > 50 ? 50 : searchPage+1;
@@ -31,8 +37,14 @@ function orderByPageNext() {
     getOrdersBySearch();
 }
 
+
+
+
 function getOrdersBySearch() {
     orderPage.innerHTML= "";
+    if(searchValue.length > 0){
+        searchPage = 1;
+    }
     getOrdersData(searchPage,searchValue).then(data=>{
         const orders  = data.orders.map(value=>{
             let status = "";
@@ -55,6 +67,11 @@ function getOrdersBySearch() {
         });
     
         orderPage.innerHTML = orders.join("");
+        
         page.innerText = data.page;
+        totalPage.innerText = data.total;
+        if(data.total === 0){
+            page.innerText = 0;
+        }
     });
 }

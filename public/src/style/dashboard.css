@@ -51,10 +51,11 @@
 .table,
 .chart{
     border: solid 2px var(--secondary);
-    border-radius: 5px;
+    border-radius: 2px;
     padding: 1em;
     padding-bottom: 0px;
-    height: 400px;
+    height: 250px;
+    width: 95%;
 }
 
 .table{
@@ -71,7 +72,7 @@ input[type=checkbox]{
 label {
 	cursor: pointer;
 	text-indent: -9999px;
-	width: 60px;
+	width: 50px;
 	height: 25px;
 	background: var(--primary);
     border: solid 1px var(--secondary);
@@ -106,6 +107,38 @@ input:checked + label:after {
 label:active:after {
 	width: 20px;
 }
+
+
+
+.bar{
+    width: 20px;
+    border: solid 1px var(--secondary);
+    height: 240px;
+    align-self: flex-end;
+}
+
+.chart-lebal,
+.chart{
+    display: grid;
+    align-content: end;
+    width: fit-content;
+    
+}
+.chart-lebal{
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    top: 30px;
+    left: -0.5em;
+
+}
+.lebal{
+    transform: rotate(-45deg);
+    text-align: end;
+    font-size: small;
+    font-weight: 300;
+}
+
 
 
 @media screen and (max-width: 850px) {

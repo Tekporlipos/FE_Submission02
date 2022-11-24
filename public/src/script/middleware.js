@@ -5,7 +5,6 @@ window.onload = (event)=>{
         window.location.replace("login.html");
     }else if(token.length !== 277 ){
         refreshToken().then(data=>{
-
             if(data.access_token){
                 setCookie("token",data.access_token,15*60*1000);
             }else{
@@ -13,7 +12,6 @@ window.onload = (event)=>{
                 setCookie("refresh_token",null,-30*12*60*60*1000);
                 window.location.replace("login.html");
             }
-
         });
     }
   
