@@ -166,7 +166,7 @@ function weekChartDataFunc(weekChartData,dataLastweek) {
     `<div class="chart mt-2 chart-7">
     ${bars.join("")}
      </div>
-    <div class="chart-lebal chart-7">
+    <div class="chart-lebal chart-7 chart-lebal-7">
     ${lable.join("")}
     </div>`
 

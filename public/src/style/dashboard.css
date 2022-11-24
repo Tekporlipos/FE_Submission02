@@ -132,6 +132,10 @@ label:active:after {
     left: -0.5em;
 
 }
+
+.chart-lebal-7{
+    left: -4.5em;
+}
 .lebal{
     transform: rotate(-45deg);
     text-align: end;
@@ -162,12 +166,18 @@ label:active:after {
 
     .chart-7{
         grid-template-columns: repeat(7,50px);
-        padding-left: 4em;
+        padding-left: 1em;
     }
     
+
+    .chart-lebal-7{
+        left: -0.99em;
+    }
+
     .chart-12-paddingl{
         padding-left: 1em;
     }
+
     
     .chart-12{
         grid-template-columns: repeat(12,34px);
@@ -185,6 +195,7 @@ label:active:after {
          grid-template-columns: repeat(7,40px);
          padding-left: 1em;
      }
+
      
      .chart-12-paddingl{
          padding-left: 0em;
