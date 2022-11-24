@@ -15,6 +15,7 @@
             <img src="./src/image/Freddys_Logo.svg" width="90" alt="Freddys_Logo">
             <a class="mt-2" href="./index.html">Dashboard</a>
             <a class="mt-1" href="#">Orders</a>
+            <!-- logout -->
             <form class="mt-1"  action="./login.html" method="post">
                <button class="bg-primary remove-border">Logout</button>
             </form>
@@ -44,13 +45,14 @@
                               </tr>
                         </thead>
                        
-                        <tbody class="table-body">
-                            
-                        </tbody>
+                        <!-- orders content -->
+                        <tbody class="table-body"></tbody>
                       </table>
                
 
             </div>
+
+            <!-- pagination controls -->
             <div class="flex-row pt-05">
                 <i class="pr-05 cursor-pointer rotate" onclick="orderByPagePrev()">&#10148;</i><div class="pr-05">Page <span class="current-page">1</span> of <span class="total-page"></span></div> <i onclick="orderByPageNext()" class="cursor-pointer">&#10148;</i>
             </div>
@@ -58,8 +60,8 @@
     </main>
 
 <script src="./src/script/main.js"></script>
-<script src="./src/script/middleware.js"></script>
 <script src="./src/script/apis.js"></script>
+<script src="./src/script/middleware.js"></script>
 <script src="./src/script/orders.js"></script>
 <script src="./src/script/logout.js"></script>
 </body>

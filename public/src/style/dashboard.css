@@ -139,6 +139,18 @@ label:active:after {
     font-weight: 300;
 }
 
+.chart-7{
+    grid-template-columns: repeat(7,100px);
+    padding-left: 4em;
+}
+
+.chart-12-paddingl{
+    padding-left: 2.5em;
+}
+
+.chart-12{
+    grid-template-columns: repeat(12,70px);
+}
 
 
 @media screen and (max-width: 850px) {
@@ -146,5 +158,39 @@ label:active:after {
    .card{
     min-width: 90%;
     margin-right: 0px;
+    }
+
+    .chart-7{
+        grid-template-columns: repeat(7,50px);
+        padding-left: 4em;
+    }
+    
+    .chart-12-paddingl{
+        padding-left: 1em;
+    }
+    
+    .chart-12{
+        grid-template-columns: repeat(12,34px);
+    }
 }
-}
+
+
+@media screen and (max-width: 620px) {
+
+    .table{
+        width: 80%;
+        overflow-x: hidden;
+    }
+     .chart-7{
+         grid-template-columns: repeat(7,40px);
+         padding-left: 1em;
+     }
+     
+     .chart-12-paddingl{
+         padding-left: 0em;
+     }
+     
+     .chart-12{
+         grid-template-columns: repeat(12,24px);
+     }
+ }
