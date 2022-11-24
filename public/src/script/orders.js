@@ -46,32 +46,38 @@ function getOrdersBySearch() {
         searchPage = 1;
     }
     getOrdersData(searchPage,searchValue).then(data=>{
-        const orders  = data.orders.map(value=>{
-            let status = "";
-    
-            switch (value.status) {
-                case "processing":
-                    status = "text-danger"
-                    break;
-                case "delivered":
-                    status = "text-success"
-                    break;
-            }
-    
-            return `<tr>
-            <td>${value.product.name}</td>
-            <td>${ value.created_at.substring(0,10)}</td>
-            <td>${ value.currency} ${ value.total}</td>
-            <td class="${status}">${ value.status}</td>
-          </tr>`
-        });
-    
-        orderPage.innerHTML = orders.join("");
+
+        if(data.orders){
+            const orders  = data.orders.map(value=>{
+                let status = "";
+                switch (value.status) {
+                    case "processing":
+                        status = "text-danger"
+                        break;
+                    case "delivered":
+                        status = "text-success"
+                        break;
+                }
         
-        page.innerText = data.page;
-        totalPage.innerText = data.total;
-        if(data.total === 0){
-            page.innerText = 0;
+                return `<tr>
+                <td>${value.product.name}</td>
+                <td>${ value.created_at.substring(0,10)}</td>
+                <td>${ value.currency} ${ value.total}</td>
+                <td class="${status} text-capitalize">${ value.status}</td>
+              </tr>`
+            });
+        
+            orderPage.innerHTML = orders.join("");
+            
+            page.innerText = data.page;
+            totalPage.innerText = data.total;
+            if(data.total === 0){
+                page.innerText = 0;
+            }
+
+        }else{
+            checkAuth();
         }
+        
     });
 }

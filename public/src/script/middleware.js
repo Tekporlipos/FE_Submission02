@@ -1,4 +1,8 @@
 window.onload = (event)=>{
+    checkAuth();
+  }
+
+  function checkAuth() {
     const token  =   getCookie("token");
     const refreshTokenken  =   getCookie("refresh_token");
     if((token && token.length !== 277 ) || (refreshTokenken && refreshTokenken.length !== 260)){
@@ -14,5 +18,4 @@ window.onload = (event)=>{
             }
         });
     }
-  
   }
