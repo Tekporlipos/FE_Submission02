@@ -1,3 +1,9 @@
+[ <img src="public/src/image/Freddys_Logo.svg" width="100" /> ](https://tekporlipos.github.io/FE_Submission02/public/login.html)
+
+
+[ FREDDY ](https://tekporlipos.github.io/FE_Submission02/public/login.html)
+
+
 ## Section B: The Assignment
 Your assignment is to implement an analytics dashboard using
 JavaScript and no framework.
@@ -7,14 +13,16 @@ framework.
 2. Build out the project to the designs inside
 the `/Designs` folder.
 3. Implement the following views:
-a. Login
+
+> a. Login
 Login using the API at `.envlogin` with POST `{
 username: 'freddy', password: 'ElmStreet2019' }`. The
 login endpoint will return a JWT `access_token` that is
 valid for 15 minutes and a `refresh_token` which is
 valid for 30 days. Make sure to also handle wrong
 credentials properly
-b. Dashboard
+
+> b. Dashboard
 Retrieve the necessary data for the dashboard
 at `https://freddy.codesubmit.io/dashboard`. Thisendpoint requires a `Authorization: Bearer
 access_token` header. Use the access token that you
@@ -26,13 +34,15 @@ the `Authorization: Bearer refresh_token` header.
 Implement the chart with a charting library of your
 choice and add a toggle that switches between a
 weekly and yearly view.
-c. Orders
+
+>c. Orders
 Fetch the orders
 at `https://freddy.codesubmit.io/orders?page=1&q=s
 earch_term`. This endpoint requires a `Authorization:
 Bearer access_token` header. Make sure to implement
 search and pagination
-Deliverables
+
+## Deliverables
 Make sure to include all source code in the repository.
 To make reviewing easier, include a fully built version of your
 assignment in a folder named public.
