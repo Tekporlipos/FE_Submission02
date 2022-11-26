@@ -47,6 +47,7 @@ document.querySelector("form")
             }).catch(value=>{
                 error.innerText = value;
                 error.style.display="block";
+                loader.style.display="none";
             })
 
 
